@@ -78,6 +78,8 @@ Overall all fetched data should like similar to this image
 
 Due to new to microservices architecture to connect microservices together I used http approach which is simple but not the best way to connect microservices. In a real-world scenario, I would use a message broker like RabbitMQ or Kafka to connect microservices together.
 
+All three microservices are independent from each other in terms of database and code. They can be run on different servers and can be scaled independently. They even can have totally separate dbs such as mondb, posgres, etc. Event though books are tightly coupled with authors, they are still separate microservices.
+
 During the development I noticed several user auth calls across microservices, and think the best approach would be to use an auth layer from user calls and add a quicker and secure way between microservices, which will be different from the user auth calls. 
 
 
