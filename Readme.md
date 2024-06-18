@@ -88,3 +88,4 @@ What can be improved
 1. on Book creation api instead of providing author_id, author name can be provided and author microservice can be called to get the author id, Same for update request, if author name is not present in author microservice db then create 1 and get the id
 1. Remove leftover files and code overall to make the project clean
 1. Frontend can be improved to show better UI/UX
+1. Add a message broker to connect microservices together
